@@ -32,7 +32,17 @@ docker compose up -d
 
 ## Step 4
 
-Open Jenkins by going to: [http://localhost:8080/](http://localhost:8080/) and finish the installation process.
+Open Jenkins by going to: [http://localhost:8080/](http://localhost:8080/) 
+
+steps to finish installation:
+
+1) get back to terminal where you composed your yaml file
+2) docker ps  and copy container id for jenkins
+3) open terminal : exec -it contianer_id bash
+4) cd var/jenkins_home/secrets
+5) cat initialAdminPassword
+6) copy this key and past in your locol host port 8080b which is running jenkins
+7) complete the installation process
 
 ## Step 5
 
